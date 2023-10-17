@@ -7,10 +7,10 @@ export default {
       colors: {
         primaryTitle: "#127369",
         primaryContent: "#4C5958",
-        primarySubcontent: "#8AA6A3",
-        primaryBase: "#a9b5b4",
+        primarySubcontent: "#b5cecb",
+        primaryBase: "#fdfdfd",
         primaryAccent: "#10403B",
-        primaryBg: "#BFBFBF",
+        primaryBg: "#f6f6f6",
       }
     },
   },

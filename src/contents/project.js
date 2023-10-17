@@ -6,6 +6,7 @@ export const data = [
   {
     date: "2020-2021",
     title: "Fullstack - Sport Analysis System",
+    link: "#",
     materials: [
       { type: faGithub, link: '#' },
       { type: faYoutube, link: '#' },
@@ -19,10 +20,12 @@ export const data = [
       ["React", "Redus", "MUI"],
       ["NginX", "NodeJS", "Express", "MongoDB"],
     ],
+    picture: picExp
   },
   {
     date: "2019-2020",
     title: "Fashion Ecommerce",
+    link: "#",
     materials: [
       { type: faGithub, link: "#" },
       { type: faYoutube, link: "#" },
@@ -34,6 +37,7 @@ export const data = [
     skills: [
       ["NginX", "NodeJS", "Express", "MongoDB"],
     ],
+    picture: picLittleLemon
   },
   {
     date: "2019-2020",
@@ -44,5 +48,6 @@ export const data = [
     skills: [
       ["NginX", "NodeJS", "Express", "MongoDB"],
     ],
+    picture: picLittleLemon
   },
 ]

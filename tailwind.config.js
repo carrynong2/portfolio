@@ -8,7 +8,7 @@ export default {
         primaryTitle: "#127369",
         primaryContent: "#4C5958",
         primarySubcontent: "#8AA6A3",
-        primaryBase: "#4C5958",
+        primaryBase: "#a9b5b4",
         primaryAccent: "#10403B",
         primaryBg: "#BFBFBF",
       }

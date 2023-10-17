@@ -4,7 +4,7 @@ import React from 'react'
 
 const TitleLink = ({ isHighLight, title, link }) => {
   if (!link) {
-    return <div><FontAwesomeIcon className={`text-xs -rotate-45 duration-300 east-out ${isHighLight ? 'translate-x-1 -translate-y-1' : ''}`} icon={faArrowRight} /></div>
+    return <div className={`text-primaryAccent ${isHighLight ? "text-primaryTitle" : ""}`}>{title}</div>
   }
 
   return (

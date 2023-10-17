@@ -5,9 +5,9 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className="flex items-end gap-4 text-2xl">
-      <FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faGithub} />
-      <FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faMedium} />
-      <FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faLinkedin} />
+      <a href="#"><FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faGithub} /></a>
+      <a href="#"><FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faMedium} /></a>
+      <a href="#"><FontAwesomeIcon className="hover:scale-125 hover:text-primaryTitle transition-all" icon={faLinkedin} /></a>
     </div>
   )
 }

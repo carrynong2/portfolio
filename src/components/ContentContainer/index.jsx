@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FormattedDate from '../FormattedDate';
 import Picture from '../Picture';
 import TitleLink from '../TitleLink';
@@ -6,13 +6,17 @@ import Description from '../Description';
 import Tech from '../Tech';
 import Material from '../Material';
 
-const ContentContainer = ({ title: sectionTitle = "", data = [] }) => {
+const ContentContainer = ({ title: sectionTitle = "", data = [], onInitial }) => {
   const [isMouseEnter, setIsMouseEnter] = useState({});
 
   const SECTION_ID = `${sectionTitle}-section`;
 
+  useEffect(() => {
+    onInitial(SECTION_ID);
+  }, [])
+
   return (
-    <div id={SECTION_ID}>
+    <div id={SECTION_ID} className='scroll-m-14'>
       <div className='text-primaryAccent font-medium px-2'>{sectionTitle}</div>
       {
         data.map(({ date = '', title = '', link = '', descriptions, skills = [], materials = [], picture = '' }, index) => {

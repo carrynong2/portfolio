@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import { data } from "../../contents/experience"
+import { data } from "../../contents/certication"
 import ContentContainer from '../../components/ContentContainer'
-
-const SECTION_ID = 'experience-section'
 
 const Experience = () => {
   return (
-    <ContentContainer title='Experience' data={data} />
+    <ContentContainer title='Certifiction' data={data} />
   )
 }
 

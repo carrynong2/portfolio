@@ -1,6 +1,4 @@
 import { faGithub, faMedium, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import picExp from '../assets/exp_site.png'
-import picLittleLemon from '../assets/littlelemon.png'
 
 export const data = [
   {

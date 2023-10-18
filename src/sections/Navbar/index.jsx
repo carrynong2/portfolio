@@ -8,7 +8,7 @@ const navs = [
   { title: "Certification", sectionId: "Certification-section" },
 ]
 
-const Navbar = () => {
+const Navbar = ({ navBarItems, currentSection }) => {
   const [isMouseEnter, setIsMouseEnter] = useState({});
 
   const handleClick = (sectionId) => {
@@ -16,9 +16,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex flex-col gap-3 font-semibold">
+    <div className="hidden lg:flex flex-col gap-3 font-semibold mt-5">
       {
-        navs.map((e, i) => {
+        navBarItems.map((e, i) => {
           return (
             <div
               className='cursor-pointer flex'
@@ -28,9 +28,10 @@ const Navbar = () => {
               onMouseLeave={() => setIsMouseEnter({ [e.title]: false })}
             >
               <div>
-                <FontAwesomeIcon className={`mr-2 text-primaryTitle new-arrow ${isMouseEnter[e.title] ? '' : 'hidden'}  `} icon={faArrowRight} />
+                <FontAwesomeIcon
+                  className={`new-arrow ${currentSection === e.sectionId ? "text-primaryTitle" : isMouseEnter[e.title] ? "" : "hidden"}  `} icon={faArrowRight} />
               </div>
-              <div className={`${isMouseEnter[e.title] ? 'translate-x-3' : ''} duration-500 ease-out`}>
+              <div className={`${currentSection === e.sectionId || isMouseEnter[e.title] ? 'translate-x-3' : ''} duration-500 ease-out`}>
                 {e.title}
               </div>
             </div>
